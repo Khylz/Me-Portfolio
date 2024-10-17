@@ -111,7 +111,6 @@
     background-color: hsl(337, 93%, 35%);
     border-radius: 50%;
     border: none;
-    cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
     animation: blink 1s infinite alternate;
@@ -121,7 +120,6 @@
 .point-profil:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    cursor: none; 
 }
 
 .point-profil:active {
@@ -156,6 +154,20 @@
         margin-bottom: 15px;
     }
 }
+
+
+.point-profil-gris {
+    width: 15px;
+    height: 15px;
+    background-color: hsl(330, 2%, 58%);
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: blink 1s infinite alternate;
+    cursor: none; 
+}
+
 
 
 

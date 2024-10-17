@@ -12,10 +12,15 @@
 
  /* Block avec titre et paragraphe */
 
- .skilltitle{
+ .title{
     font-size: 45px;
     font-weight: bold;
+    transition: 200ms;
    
+ }
+
+ .title:hover{
+    transform: scale(1.05);
  }
 
  .skillpara{
