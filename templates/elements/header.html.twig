@@ -1,15 +1,10 @@
 
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary mb-5 ">
   <div class="container">
     <div class="row w-100 align-items-center">
       <div class="col-lg-1"></div>
-      <div class="col-lg-2 d-flex">
-        <a class="navbar-brand" href="#">
-          <img src="{{ asset('divers/images/Khylz.png') }}" alt="Logo" class="logonav">
-          
-        </a>
-        <h1 class="textmobile navbar-brand "></h1>
+      <div class="col-lg-2">
       </div>
       <div class="col-lg-6">
         <button class="navbar-toggler collapsed humburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,10 +16,10 @@
 
         <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link navtext" aria-current="page" href="#">Accueil</a>
-            <a class="nav-link navtext" href="#">Profil</a>
-            <a class="nav-link navtext" href="#">Compétences</a>
-            <a class="nav-link navtext" href="#">Contact</a>
+            <a class="nav-link navtext" aria-current="page" href="{{ path('app_portfolio') }}">Accueil</a>
+            <a class="nav-link navtext" href="{{ path('Profil') }}" target="_blank">Profil</a>
+            <a class="nav-link navtext" href="{{ path('Skill') }}" target="_blank">Compétences</a>
+            <a class="nav-link navtext" href="{{ path('app_contact') }}" target="_blank">Contact</a>
           </div>
         </div>
       </div>
@@ -37,29 +32,3 @@
 </nav>
 
 
-
-{# <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <!-- Élément caché par défaut et visible seulement lors de l'ouverture du menu hamburger -->
-          <a class="nav-link d-none d-lg-block" href="#" id="hiddenElement">Hidden Element</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav> #}

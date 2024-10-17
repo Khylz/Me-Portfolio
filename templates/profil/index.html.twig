@@ -1,0 +1,73 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Thibaut Foulon - Profil {% endblock %}
+
+{% block body %}
+
+<div class="container-fluid mb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 text-center">
+                <h1 class="skilltitle">Mon Profil</h1>
+                <p class="text-center skillpara">
+                    Passionné par la technologie, les défis créatifs et l'univers du gaming, mon monde s'articule autour de l'innovation, du développement web et de l'exploration des dernières tendances numériques.
+                </p>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="container py-5">
+                <h1 class="text-center mb-5">PORTFOLIO</h1>
+                
+                <p class="text-center mb-5">
+                    Ci-dessous, quelques exemples de réalisations effectuées durant la formation, le stage et plus encore :
+                </p>
+                
+                <div class="row">
+                    <!-- Projet 1 -->
+                    <div class="col-md-4 portfolio-item">
+                        <div class="card">
+                            <img src="{{asset('divers/images/virtualvibes.jpg')}}" class="card-img-top " alt="Projet Virtuals Vibes">
+                            <div class="card-body">
+                                <h5 class="card-title">Virtual Vibes</h5>
+                                <p class="card-text">Site de news sur le gaming ( Symfony, PHP, HTML5, CSS3, SQL )</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 2 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{{asset('divers/images/renault.jpg')}}" class="card-img-top" alt="Projet Emargment">
+                            <div class="card-body">
+                                <h5 class="card-title">Emargement </h5>
+                                <p class="card-text">Application Emargement ( Symfony, React, PHP, HTML5, CSS3, SQL)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 3 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{{asset('divers/images/desertymc.jpg')}}" class="card-img-top" alt="Projet Deserty MC">
+                            <div class="card-body">
+                                <h5 class="card-title">Deserty MC</h5>
+                                <p class="card-text">Site vitrine pour un serveur minecraft ( Symfony, PHP, HTML5, CSS3, SQL )</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

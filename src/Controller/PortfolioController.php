@@ -15,4 +15,23 @@ class PortfolioController extends AbstractController
             'controller_name' => 'PortfolioController',
         ]);
     }
+
+    #[Route('Competences', name: 'Skill')]
+    public function skill(): Response
+    {
+        return $this->render('skill/index.html.twig', [
+            'controller_name' => 'PortfolioController',
+        ]);
+    }
+    
+    #[Route('Profil', name: 'Profil')]
+    public function profil(): Response
+    {
+        return $this->render('profil/index.html.twig', [
+            'controller_name' => 'PortfolioController',
+        ]);
+    }
+    
 }
+
+
