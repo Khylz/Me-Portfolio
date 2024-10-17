@@ -2,12 +2,11 @@
 
 
 
-2: Text Mobile
-3: Bouton Mobile
-5: Humberger
-6: Animation pour le bouton hamburger
-7: Navtext
-8: Navbar box shadow
+1: Bouton Mobile
+2: Humberger
+3: Animation pour le bouton hamburger
+4: Navtext
+5: Navbar box shadow
 
 
 
@@ -16,25 +15,6 @@
  -------- */
 
 
-
-/* Text mobile */
-
-.textmobile{
-    visibility: hidden;
-   
-}
-
-@media (max-width: 991px){
-    .textmobile{
-        visibility: visible;
-        align-items: center;
-        margin-top: 85px;
-        font-size: 2em;
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-}
 
 /* Bouton Mobile */
 
@@ -148,7 +128,7 @@
 
 
 .navtext {
-    font-size: 20px;
+    font-size: 16px;
     margin-left: 18px;
     color: black;
     border-bottom: 2px solid transparent;

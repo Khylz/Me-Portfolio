@@ -8,9 +8,6 @@
 
 
 
-
-
-
  -------- */
 
  /* Block avec titre et paragraphe */
@@ -51,79 +48,4 @@
     background-color: rgb(86, 11, 64);
 }
 
-/* cv skill  */
 
-.blockimagebtnskill{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.blockimgcv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.cvskill{
-    width: 300px;
-    border: solid 1px rgb(199, 199, 199);
-}
-
-
-/* Boutton download */
-
-
-
-.buttondownload {
-    appearance: none;
-    background-color: hsl(337, 93%, 35%);
-    border: 1px solid rgba(27, 31, 35, .15);
-    border-radius: 6px;
-    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 20px;
-    padding: 11px 20px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: middle;
-    white-space: nowrap;
-  }
-  
-  .buttondownload:focus:not(:focus-visible):not(.focus-visible) {
-    box-shadow: none;
-    outline: none;
-  }
-  
-  .buttoncontact:hover {
-    background-color: hsl(337, 69%, 40%);
-  }
-  
-  .buttondownload:focus {
-    box-shadow: hsl(337, 93%, 35%);
-    outline: none;
-  }
-  
-  .buttondownload:disabled {
-    background-color: hsl(337, 93%, 35%);
-    border-color: rgba(27, 31, 35, .1);
-    color: rgba(255, 255, 255, .8);
-    cursor: default;
-  }
-  
-  .buttondownload:active {
-    background-color: hsl(337, 93%, 35%);
-    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
-    opacity: 0.9;
-  }
