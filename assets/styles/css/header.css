@@ -68,7 +68,7 @@
     position: absolute;
     height: 3px;
     width: 100%;
-    background: linear-gradient(263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(263deg, rgba(252,74,74,1) 0%, rgb(29, 29, 29) 100%);
     border-radius: 1px;
     opacity: 1;
     left: 0;
@@ -163,6 +163,19 @@
     rgba(0, 0, 0, 0.05) 0px 8px 8px, 
     rgba(0, 0, 0, 0.05) 0px 16px 16px;
 }
+
+
+@media (max-width: 991px){
+
+    .footer-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+
 
 
 

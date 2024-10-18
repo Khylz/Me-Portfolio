@@ -41,7 +41,7 @@
 }
 .imgblock2{
   object-fit: cover;
-
+  border-radius: 50px;
 }
 
 .bg-block2 {

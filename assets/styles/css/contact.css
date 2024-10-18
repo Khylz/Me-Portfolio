@@ -47,8 +47,8 @@
 /* Bouton envoyer */
 
 .btn-success {
-    background-color: #22c55e;
-    border-color: #22c55e;
+    background-color: hsl(337, 93%, 35%);
+    border-color: #ffffff;
     font-size: 1rem;
     padding: 0.75rem 1rem;
     text-transform: uppercase;
@@ -58,8 +58,8 @@
 }
 
 .btn-success:hover {
-    background-color: #16a34a;
-    border-color: #16a34a;
+    background-color: #741343;
+    border-color: #ffffff;
 }
 
 /* Input field focus styling */
