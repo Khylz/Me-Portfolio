@@ -17,43 +17,51 @@
 
 
 /* Bouton Mobile */
-
 @media (max-width: 991px) {
     .navbar-collapse {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background-color: #f8f9fa; /* Ajustez la couleur selon votre design */
-      padding: 1rem;
-      z-index: 1500;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f8f9fa;
+        padding: 1rem;
+        z-index: 1500;
+        /* Ajout d'une transition plus fluide */
+        transform-origin: top;
+        transition: transform 0.3s ease-out;
     }
-  
+
+    .navbar-collapse.collapsing {
+        transform: scaleY(0);
+    }
+
+    .navbar-collapse.show {
+        transform: scaleY(1);
+    }
+
     .navbar-nav {
-      text-align: center;
+        text-align: center;
     }
-  
+
     .nav-link {
-      padding: 0.5rem 0;
+        padding: 0.5rem 0;
     }
-  }
-
-/* Humberger */
-
-
-.humburger{
-    margin-top: 12px;
 }
 
+/* Hamburger */
+.hamburger {
+    margin-top: 12px;
+}
 
 .navbar-toggler {
     width: 30px;
     height: 20px;
     position: relative;
-    transition: .5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     background: none;
     border: none;
     padding: 0;
+    cursor: pointer;
 }
 
 .navbar-toggler:focus,
@@ -72,27 +80,26 @@
     border-radius: 1px;
     opacity: 1;
     left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
+    /* Optimisation des transitions */
+    transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+    will-change: transform, opacity;
 }
 
 .top-bar {
-    margin-top: 0;
+    transform: translateY(0);
 }
 
 .middle-bar {
-    margin-top: 7px;
+    transform: translateY(7px);
 }
 
 .bottom-bar {
-    margin-top: 14px;
+    transform: translateY(14px);
 }
 
-/* Animation pour le bouton hamburger */
-
+/* Animation optimisée pour le bouton hamburger */
 .navbar-toggler:not(.collapsed) .top-bar {
-    margin-top: 7px;
-    transform: rotate(45deg);
+    transform: translateY(7px) rotate(45deg);
 }
 
 .navbar-toggler:not(.collapsed) .middle-bar {
@@ -100,84 +107,41 @@
 }
 
 .navbar-toggler:not(.collapsed) .bottom-bar {
-    margin-top: 7px;
-    transform: rotate(-45deg);
-}
-
-@media (max-width: 991px) {
-    .navbar-collapse {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #f8f9fa;
-        padding: 1rem;
-        z-index: 1000;
-    }
-
-    .navbar-nav {
-        text-align: center;
-    }
-
-    .nav-link {
-        padding: 0.5rem 0;
-    }
+    transform: translateY(7px) rotate(-45deg);
 }
 
 /* Nav text */
-
-
 .navtext {
     font-size: 16px;
     margin-left: 18px;
     color: black;
     border-bottom: 2px solid transparent;
-    transition: border-bottom-color 0.5s ease, transform 0.5s ease;
+    transition: border-bottom-color 0.3s ease;
 }
 
 .navtext:hover {
     border-bottom-color: red;
 }
 
-
- @media (max-width: 991px){
-
-    .navtext{
-        margin-left: 0px;
+@media (max-width: 991px) {
+    .navtext {
+        margin-left: 0;
         transition: none;
-        transform: none;
     }
-    .navtext:hover{
-        border-bottom: 1px solid red; 
+    
+    .navtext:hover {
+        border-bottom: 1px solid red;
         width: 30%;
         margin: auto;
     }
 }
 
 /* Navbar box shadow */
-
-.navbar{
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 1px, 
-    rgba(0, 0, 0, 0.05) 0px 2px 2px, 
-    rgba(0, 0, 0, 0.05) 0px 4px 4px, 
-    rgba(0, 0, 0, 0.05) 0px 8px 8px, 
-    rgba(0, 0, 0, 0.05) 0px 16px 16px;
+.navbar {
+    box-shadow: 
+        0 1px 1px rgba(0, 0, 0, 0.05),
+        0 2px 2px rgba(0, 0, 0, 0.05),
+        0 4px 4px rgba(0, 0, 0, 0.05),
+        0 8px 8px rgba(0, 0, 0, 0.05),
+        0 16px 16px rgba(0, 0, 0, 0.05);
 }
-
-
-@media (max-width: 991px){
-
-    .footer-link{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-}
-
-
-
-
-
-
-

@@ -17,13 +17,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-@media (max-width: 767px){
-    .blockcontact{
-        box-shadow: none;
-    }
-}
-
 /* Formulaire text couleur et intérieur */
 
 .form-control {
@@ -68,4 +61,10 @@
     border-color: #e5e7eb;
     outline: none;
     box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width: 767px){
+    .blockcontact{
+        box-shadow: none;
+    }
 }

@@ -137,25 +137,6 @@
 }
 
 
-@media (max-width: 768px){
-    .actu{
-        text-align: center;
-    }
-}
-
-@media (max-width: 768px){
-    .blockimgcv{
-        margin-top: 50px;
-    }
-}
-
-@media (max-width: 767px){
-    .blockimgcv{
-        margin-bottom: 15px;
-    }
-}
-
-
 .point-profil-gris {
     width: 15px;
     height: 15px;
@@ -166,6 +147,21 @@
     transition: transform 0.2s, box-shadow 0.2s;
     animation: blink 1s infinite alternate;
     cursor: none; 
+}
+
+@media (max-width: 768px){
+    .blockimgcv{
+        margin-top: 50px;
+    }
+    .actu{
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px){
+    .blockimgcv{
+        margin-bottom: 15px;
+    }
 }
 
 

@@ -74,15 +74,9 @@
      4px 4px 8px rgba(0, 0, 0, 0.03),
      5px 5px 10px rgba(0, 0, 0, 0.03);
  }
- @media (max-width: 991px) {
-  .colimgblock2 {
-    margin-bottom: 50px;
-  }
-}
 
  .titreblock2{
    font-size: 35px;
-
  }
 
 
@@ -91,6 +85,7 @@
    font-style: normal;
    font-size: 24px;
  }
+
 
 
 .buttoncontact {
@@ -143,6 +138,19 @@
   background-color: hsl(337, 93%, 35%);
   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
   opacity: 0.9;
+}
+
+
+@media (max-width: 991px) {
+  .colimgblock2 {
+    margin-bottom: 50px;
+  }
+  .parahistoire {
+    font-size: 20px;
+  }
+  .titreblock2{
+    font-size: 32px;
+  }
 }
 
 
